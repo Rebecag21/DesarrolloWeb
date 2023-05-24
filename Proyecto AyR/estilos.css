@@ -24,7 +24,7 @@ body{
 
 header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(207, 217, 223, 0.575) 0%, rgba(226, 231, 240, 0.603) 100%), url(img/1420827999_617401_1420828785_album_normal.jpeg);
+    background-image: linear-gradient(to top, rgba(207, 217, 223, 0.242) 0%, rgba(226, 231, 240, 0.603) 100%), url(img/1420827999_617401_1420828785_album_normal.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -60,6 +60,212 @@ header{
     width: 30vw;
     height: 100%;
     background-color: #DCD9D4;
- background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
- background-blend-mode: soft-light,screen;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out; 
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0,0,0, .5)
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: black;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* Conoce más sobre los edificios */
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color:black;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-edificios{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-edificios img{
+    width: 40%;
+}
+
+.edificio{
+    width: 45%;
+}
+
+.edificio{
+    margin-bottom: 20px;
+}
+
+.n-edificio{
+    margin-bottom: 7px;
+    color: black;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+    width: 30px;
+    height: 30px;
+    color: #fdfbfb;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.gallery{
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0,0,0, .5);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0,0,0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.arquis{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-arquis{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contenedor-arquis img{
+    width: 80%;
+    display: block;
+    margin:0 auto;
+
+}
+.agregar-imagen{
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.n-arquis{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+
+/* Footer */
+
+footer{
+    background: #F4D03F;
+    padding-bottom: 0.1px; 
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color: #f2f2f2;
+
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #ffff;
+    margin-bottom: 60px;
 }
